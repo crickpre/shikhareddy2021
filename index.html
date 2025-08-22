@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ranjeet Singh - Best Cricket Expert</title>
+    <title>Shikha Reddy - Cricket Predictions</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -14,9 +14,10 @@
         }
         
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;600;700&display=swap');
         
         body {
-            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://images.unsplash.com/photo-1626005569286-118226642330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1507&q=80') no-repeat center center fixed;
             background-size: cover;
             color: white;
             min-height: 100vh;
@@ -35,16 +36,16 @@
             border-radius: 15px;
             padding: 30px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-            border: 2px solid #ff6b00;
+            border: 2px solid #e91e63;
             animation: containerGlow 3s infinite alternate;
         }
         
         @keyframes containerGlow {
             0% {
-                box-shadow: 0 0 20px rgba(255, 107, 0, 0.5);
+                box-shadow: 0 0 20px rgba(233, 30, 99, 0.5);
             }
             100% {
-                box-shadow: 0 0 30px rgba(255, 107, 0, 0.8);
+                box-shadow: 0 0 30px rgba(233, 30, 99, 0.8);
             }
         }
         
@@ -58,21 +59,21 @@
             height: 150px;
             border-radius: 50%;
             object-fit: cover;
-            border: 4px solid #ff6b00;
-            box-shadow: 0 0 25px rgba(255, 107, 0, 0.7);
+            border: 4px solid #e91e63;
+            box-shadow: 0 0 25px rgba(233, 30, 99, 0.7);
             transition: transform 0.3s;
             animation: pulse 2s infinite;
         }
         
         @keyframes pulse {
             0% {
-                box-shadow: 0 0 25px rgba(255, 107, 0, 0.7);
+                box-shadow: 0 0 25px rgba(233, 30, 99, 0.7);
             }
             50% {
-                box-shadow: 0 0 35px rgba(255, 107, 0, 0.9);
+                box-shadow: 0 0 35px rgba(233, 30, 99, 0.9);
             }
             100% {
-                box-shadow: 0 0 25px rgba(255, 107, 0, 0.7);
+                box-shadow: 0 0 25px rgba(233, 30, 99, 0.7);
             }
         }
         
@@ -84,61 +85,60 @@
             font-size: 2.8rem;
             margin-bottom: 10px;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
-            color: #ff6b00;
+            color: #e91e63;
             letter-spacing: 1px;
         }
         
         .subscriber-count {
             font-size: 1.3rem;
             margin-bottom: 25px;
-            color: #ffcc00;
+            color: #ff79a9;
             font-weight: bold;
         }
         
-        .paid-promo {
-            background: rgba(255, 107, 0, 0.2);
+        .quote {
+            background: rgba(233, 30, 99, 0.2);
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border: 1px solid #e91e63;
+            font-size: 1.1rem;
+            color: #ff79a9;
+            font-family: 'Hind', sans-serif;
+            line-height: 1.6;
+            font-style: italic;
+        }
+        
+        .contact {
+            background: rgba(233, 30, 99, 0.1);
             padding: 10px 20px;
             border-radius: 30px;
             margin: 15px 0;
-            border: 1px solid #ff6b00;
+            border: 1px solid #e91e63;
             font-size: 1.1rem;
-            color: #ffcc00;
-            max-width: 300px;
+            color: #ff79a9;
+            max-width: 250px;
             margin-left: auto;
             margin-right: auto;
         }
         
-        .expert-info {
+        .features {
             display: flex;
-            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
             gap: 15px;
             margin: 25px 0;
         }
         
-        .expert-card {
-            background: rgba(255, 107, 0, 0.1);
-            padding: 15px 20px;
-            border-radius: 10px;
-            border: 1px solid rgba(255, 107, 0, 0.3);
-            text-align: center;
-        }
-        
-        .expert-name {
-            font-size: 1.5rem;
-            color: #ffcc00;
-            margin-bottom: 5px;
-        }
-        
-        .expert-desc {
-            font-size: 1rem;
-            color: #fff;
-        }
-        
-        .experience {
-            color: #ff6b00;
-            font-weight: bold;
-            font-size: 1.1rem;
-            margin-top: 10px;
+        .feature {
+            background: rgba(233, 30, 99, 0.1);
+            padding: 10px 15px;
+            border-radius: 8px;
+            border: 1px solid rgba(233, 30, 99, 0.3);
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
         }
         
         .timer-container {
@@ -146,16 +146,16 @@
             padding: 20px 40px;
             border-radius: 10px;
             margin: 25px 0;
-            border: 2px solid #ff6b00;
+            border: 2px solid #e91e63;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
         }
         
         .timer {
             font-size: 3rem;
             font-weight: bold;
-            color: #ffcc00;
+            color: #ff79a9;
             font-family: 'Digital', Arial, sans-serif;
-            text-shadow: 0 0 10px rgba(255, 204, 0, 0.6);
+            text-shadow: 0 0 10px rgba(255, 121, 169, 0.6);
         }
         
         .timer-label {
@@ -209,21 +209,56 @@
         }
         
         .btn-primary {
-            background: linear-gradient(45deg, #ff6b00, #ff9500);
+            background: linear-gradient(45deg, #e91e63, #ff79a9);
             color: white;
-            box-shadow: 0 5px 20px rgba(255, 107, 0, 0.5);
+            box-shadow: 0 5px 20px rgba(233, 30, 99, 0.5);
         }
         
         .btn-secondary {
             background: transparent;
-            color: #ffcc00;
-            border: 2px solid #ffcc00;
-            box-shadow: 0 5px 15px rgba(255, 204, 0, 0.3);
+            color: #ff79a9;
+            border: 2px solid #ff79a9;
+            box-shadow: 0 5px 15px rgba(255, 121, 169, 0.3);
         }
         
         .btn:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(255, 107, 0, 0.7);
+            box-shadow: 0 10px 25px rgba(233, 30, 99, 0.7);
+        }
+        
+        .links {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        
+        .link {
+            color: #ff79a9;
+            text-decoration: none;
+            transition: all 0.3s;
+            font-size: 1rem;
+            position: relative;
+            padding-bottom: 3px;
+        }
+        
+        .link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #e91e63;
+            transition: width 0.3s;
+        }
+        
+        .link:hover {
+            color: #e91e63;
+        }
+        
+        .link:hover::after {
+            width: 100%;
         }
         
         .social-icons {
@@ -234,13 +269,13 @@
         }
         
         .social-icons a {
-            color: #ffcc00;
+            color: #ff79a9;
             font-size: 1.5rem;
             transition: color 0.3s;
         }
         
         .social-icons a:hover {
-            color: #ff6b00;
+            color: #e91e63;
         }
         
         @keyframes fadeInUp {
@@ -264,8 +299,8 @@
                 height: 120px;
             }
             
-            .expert-name {
-                font-size: 1.3rem;
+            .quote {
+                font-size: 1rem;
             }
             
             .timer {
@@ -284,8 +319,9 @@
                 font-size: 1.8rem;
             }
             
-            .expert-name {
-                font-size: 1.2rem;
+            .quote {
+                font-size: 0.9rem;
+                padding: 10px 15px;
             }
             
             .timer-container {
@@ -315,42 +351,28 @@
 <body>
     <div class="container">
         <div class="logo-container">
-            <img src="logo.jpg" alt="Ranjeet Singh Cricket Expert Logo" class="logo">
+            <img src="logo.jpg" alt="Shikha Reddy Logo" class="logo">
         </div>
         
-        <h1>Ranjeet Singh</h1>
-        <p class="subscriber-count">60,441 subscribers</p>
+        <h1>𝐒𝐡𝐢𝐤𝐡𝐚 𝐑𝐞𝐝𝐝𝐲 [2021]</h1>
+        <p class="subscriber-count">44,463 subscribers</p>
         
-        <div class="paid-promo">Paid Promo ➜ @RanjeetSinghReal</div>
+        <div class="quote">
+            हर पल हर कदम पर रिस्क है,<br>
+            फिर भी जिंदगी से सबको इश्क़ है🍀
+        </div>
         
-        <div class="expert-info">
-            <div class="expert-card">
-                <div class="expert-name">Ranjeet Singh</div>
-                <div class="expert-desc">Best Cricket Expert</div>
-            </div>
-            
-            <div class="expert-card">
-                <div class="expert-name">Sushant Khatri</div>
-                <div class="expert-desc">Best Cricket Expert</div>
-                <div class="experience">Since 2016 - 7 Year + Experience ❤️</div>
-            </div>
+        <div class="contact">Contact👉 @ShikhaReddy</div>
+
+        <div class="btn-container">
+            <a href="https://t.me/+PYF1Q5YTNeZmNmM9" class="btn btn-primary"><i class="fab fa-telegram"></i> JOIN [𝐒𝐡𝐢𝐤𝐡𝐚 𝐑𝐞𝐝𝐝𝐲 [2021]] CHANNEL</a>
         </div>
         
         <div class="timer-container">
             <div class="timer" id="countdown">60</div>
             <div class="timer-label">SECONDS REMAINING</div>
         </div>
-        
-        <div class="btn-container">
-            <a href="#" class="btn btn-primary"><i class="fab fa-telegram"></i> JOIN TELEGRAM CHANNEL</a>
-            <a href="#" class="btn btn-secondary"><i class="fas fa-users"></i> Join Channel</a>
-        </div>
-        
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-telegram"></i></a>
-            <a href="#"><i class="fab fa-whatsapp"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-        </div>
+    
     </div>
     
     <script>
@@ -395,19 +417,19 @@
         const logo = document.querySelector('.logo');
         setInterval(() => {
             logo.style.transform = 'scale(1.05)';
-            logo.style.boxShadow = '0 0 35px rgba(255, 107, 0, 0.9)';
+            logo.style.boxShadow = '0 0 35px rgba(233, 30, 99, 0.9)';
             setTimeout(() => {
                 logo.style.transform = 'scale(1)';
-                logo.style.boxShadow = '0 0 25px rgba(255, 107, 0, 0.7)';
+                logo.style.boxShadow = '0 0 25px rgba(233, 30, 99, 0.7)';
             }, 1000);
         }, 5000);
         
-        // Add floating animation to expert cards
-        const expertCards = document.querySelectorAll('.expert-card');
-        expertCards.forEach((card, index) => {
-            card.style.animation = `fadeInUp 0.6s forwards`;
-            card.style.animationDelay = `${0.5 + (index * 0.2)}s`;
-            card.style.opacity = '0';
+        // Add floating animation to features
+        const features = document.querySelectorAll('.feature');
+        features.forEach((feature, index) => {
+            feature.style.animation = `fadeInUp 0.6s forwards`;
+            feature.style.animationDelay = `${0.5 + (index * 0.2)}s`;
+            feature.style.opacity = '0';
         });
     </script>
 </body>
